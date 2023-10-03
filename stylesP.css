@@ -8,7 +8,7 @@ body {
     grid-template-areas: 
     "nav nav nav nav nav nav"
     "image image main-text main-text main-text main-text"
-    " video video quotes quotes upgrades upgrades"
+    " video video video quotes upgrades upgrades"
     "strong weak lore lore lore lore";
 }
 
@@ -75,8 +75,8 @@ a:hover{
 }
 
 image image{
-    max-width: 500px;
-    max-height: 250px;
+    width:fit-content;
+    height:fit-content;
 }
 
 /*grid 3*/
@@ -86,7 +86,6 @@ image image{
     align-items: center;
     justify-content: left;
     text-align: left;
-    border: 1px solid rgb(16, 16, 209);
     font-size:1.5rem;
 }
 
@@ -264,4 +263,42 @@ main, section, footer {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color:white;
+        
+        grid-template-areas: 
+        "nav nav"
+        "image main-text"
+        "video upgrades"
+        "strong weak"
+        "lore lore";
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr ;
+        color:white;
+        
+        grid-template-areas: 
+        "nav"
+        "image "
+        "main-text"
+        "video" 
+        "upgrades"
+        "strong" 
+        "weak"
+        "lore" 
+        "lore";
+    }
 }
