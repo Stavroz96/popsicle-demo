@@ -17,7 +17,8 @@ body {
     grid-area: nav;
     align-items: center;
     background-image: linear-gradient(180deg, black, blue 33%, black);
-    color:yellow;
+    color:red;
+    text-shadow: 1px 1px black;
 }
 
 nav h1{
@@ -47,7 +48,7 @@ nav ul li {
 }
 
 a{
-    color: yellow;
+    color: red;
     text-decoration:none;
 }
 
@@ -56,12 +57,12 @@ a:hover{
     font-size: 1.5rem;
 }
 
-#protoss-emblem{
+#terran-emblem{
     max-width: 75px; 
     max-height: 75px; 
 }
 
-#protoss-zealot{
+#terran-marine{
     max-width: 350px;
     height:250px;
 }
@@ -155,27 +156,24 @@ iframe{
 
 #upgrades ul{
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
+
 }
 
 #upgrades ul li{
     margin-bottom: 3px;
 }
 
-#protoss-weapons-upgrade{
-    list-style-image: url(protoss-photos/protoss_weapons_upgrade.webp);
+#infantry-weapons-upgrade{
+    list-style-image: url(terran-photos/Infantry_weapons_upgrade.gif);
 }
 
-#protoss-armor-upgrade{
-    list-style-image: url(protoss-photos/protoss-armor.webp);
+#infantry-armor-upgrade{
+    list-style-image: url(terran-photos/infantry_armor_upgrade.gif);
 }
 
-#protoss-shields-upgrade{
-    list-style-image: url(protoss-photos/protoss-shields.webp);
-}
-
-#charge-upgrade{
-    list-style-image: url(protoss-photos/charge-upgrade.webp);
+#stimpack{
+    list-style-image: url(terran-photos/stimpack.png);
 }
 
 blockquote{
@@ -194,6 +192,7 @@ blockquote{
 
 #strong ul{
     text-align: left;
+    margin-bottom: 8px;
 }
 
 #strong h2{
@@ -237,6 +236,8 @@ blockquote{
 .spacer{
     flex-grow: 1;
 }
+
+
 
 header img {
     height: 100px;

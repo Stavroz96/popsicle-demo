@@ -8,7 +8,7 @@ body {
     grid-template-areas: 
     "nav nav nav nav nav nav"
     "image image main-text main-text main-text main-text"
-    " video video quotes quotes upgrades upgrades"
+    " video video upgrades upgrades upgrades upgrades"
     "strong weak lore lore lore lore";
 }
 
@@ -17,7 +17,8 @@ body {
     grid-area: nav;
     align-items: center;
     background-image: linear-gradient(180deg, black, blue 33%, black);
-    color:yellow;
+    color:rgb(209, 40, 209);
+    text-shadow: 1px 1px light;
 }
 
 nav h1{
@@ -47,7 +48,7 @@ nav ul li {
 }
 
 a{
-    color: yellow;
+    color:rgb(209, 40, 209);
     text-decoration:none;
 }
 
@@ -56,12 +57,12 @@ a:hover{
     font-size: 1.5rem;
 }
 
-#protoss-emblem{
+#zerg-emblem{
     max-width: 75px; 
     max-height: 75px; 
 }
 
-#protoss-zealot{
+#zergling{
     max-width: 350px;
     height:250px;
 }
@@ -155,27 +156,29 @@ iframe{
 
 #upgrades ul{
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
+    flex-grow: 1;
+
 }
 
 #upgrades ul li{
     margin-bottom: 3px;
 }
 
-#protoss-weapons-upgrade{
-    list-style-image: url(protoss-photos/protoss_weapons_upgrade.webp);
+#zerg-weapons-upgrade{
+    list-style-image: url(zerg-photos/ZergMeleeWeapon.webp);
 }
 
-#protoss-armor-upgrade{
-    list-style-image: url(protoss-photos/protoss-armor.webp);
+#zerg-armor-upgrade{
+    list-style-image: url(zerg-photos/ZergCarapace.webp);
 }
 
-#protoss-shields-upgrade{
-    list-style-image: url(protoss-photos/protoss-shields.webp);
+#adrenal-glands{
+    list-style-image: url(zerg-photos/AdrenalGlands.webp);
 }
 
-#charge-upgrade{
-    list-style-image: url(protoss-photos/charge-upgrade.webp);
+#metabolic_boost{
+    list-style-image: url(zerg-photos/MetabolicBoost.webp);
 }
 
 blockquote{
@@ -194,6 +197,8 @@ blockquote{
 
 #strong ul{
     text-align: left;
+    font-size:1.25rem;
+    margin-bottom: 8px;
 }
 
 #strong h2{
@@ -217,6 +222,7 @@ blockquote{
 #weak ul{
     text-align: left;
     margin-bottom: 8px;
+    font-size:1.25rem;
 }
 
 #weak h2{
@@ -228,7 +234,7 @@ blockquote{
 #lore{
     grid-area: lore;
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 10px;
     text-align: center;
     border: 1px solid rgb(16, 16, 209);
