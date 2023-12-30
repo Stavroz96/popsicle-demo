@@ -3,24 +3,24 @@ body {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    color:white;
-    
-    grid-template-areas: 
-    "nav nav nav nav nav nav"
-    "image image main-text main-text main-text main-text"
-    " video video video quotes upgrades upgrades"
-    "strong weak lore lore lore lore";
+    color: white;
+
+    grid-template-areas:
+        "nav nav nav nav nav nav"
+        "image image main-text main-text main-text main-text"
+        "video video video quotes upgrades upgrades"
+        "strong weak lore lore lore lore";
 }
 
-#nav{
-    display:flex;
+#nav {
+    display: flex;
     grid-area: nav;
     align-items: center;
     background-image: linear-gradient(180deg, black, blue 33%, black);
-    color:yellow;
+    color: yellow;
 }
 
-nav h1{
+nav h1 {
     padding-left: 20px;
     text-decoration: underline;
 }
@@ -33,7 +33,7 @@ nav ul {
     justify-content: right;
     align-items: center;
     gap: 20px;
-    font-size:1.35rem;
+    font-size: 1.35rem;
 }
 
 nav ul li {
@@ -46,67 +46,67 @@ nav ul li {
     align-items: center;
 }
 
-a{
+a {
     color: yellow;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     font-size: 1.5rem;
 }
 
-#protoss-emblem{
-    max-width: 75px; 
-    max-height: 75px; 
+#protoss-emblem {
+    max-width: 75px;
+    max-height: 75px;
 }
 
-#protoss-zealot{
+#protoss-zealot {
     max-width: 350px;
-    height:250px;
+    height: 250px;
 }
 
 /*grid 2*/
-#image{
+#image {
     display: flex;
     grid-area: image;
     align-items: center;
     justify-content: center;
 }
 
-image image{
-    width:fit-content;
-    height:fit-content;
+image image {
+    width: fit-content;
+    height: fit-content;
 }
 
 /*grid 3*/
 
-#main-text{
+#main-text {
     grid-area: main-text;
     align-items: center;
     justify-content: left;
     text-align: left;
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
-#main-text h2{
+#main-text h2 {
     text-decoration: white underline;
     padding-left: 20px;
 }
 
-#main-text ul li{
+#main-text ul li {
     margin-bottom: 10px;
 }
 
 /*grid 4*/
 
-#video{
+#video {
     display: flex;
     grid-area: video;
-    height:400px;
+    height: 400px;
 }
 
-iframe{
+iframe {
     max-width: 100vw;
     max-height: 100vh;
     flex-grow: 1;
@@ -114,76 +114,82 @@ iframe{
 
 /*grid 5*/
 
-.quotes{
+.parent-quote {
     grid-area: quotes;
-    text-align:center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(16, 16, 209);
+}
+
+.quotes {
+    text-align: center;
     padding: 10px;
 }
 
-.quotes h3{
+.quotes h3 {
     margin-bottom: 0;
 }
 
-.quotes ul{
+.quotes ul {
     text-align: left;
     margin-top: 0;
     font-style: italic;
 }
 
-.quotes ul li{
+.quotes ul li {
     font-size: 1.25rem;
     margin-bottom: 10px;
 }
 
 /*grid 6*/
 
-#upgrades{
+#upgrades {
     grid-area: upgrades;
     padding: 10px;
     border: 1px solid rgb(16, 16, 209);
     font-size: 1.5rem;
 }
 
-#upgrade ul li{
+#upgrade ul li {
     margin-bottom: 10px;
 }
 
-#upgrades h3{
+#upgrades h3 {
     margin-bottom: 0;
 }
 
-#upgrades ul{
+#upgrades ul {
     text-align: left;
     margin-left: 10px;
 }
 
-#upgrades ul li{
+#upgrades ul li {
     margin-bottom: 3px;
 }
 
-#protoss-weapons-upgrade{
+#protoss-weapons-upgrade {
     list-style-image: url(protoss-photos/protoss_weapons_upgrade.webp);
 }
 
-#protoss-armor-upgrade{
+#protoss-armor-upgrade {
     list-style-image: url(protoss-photos/protoss-armor.webp);
 }
 
-#protoss-shields-upgrade{
+#protoss-shields-upgrade {
     list-style-image: url(protoss-photos/protoss-shields.webp);
 }
 
-#charge-upgrade{
+#charge-upgrade {
     list-style-image: url(protoss-photos/charge-upgrade.webp);
 }
 
-blockquote{
+blockquote {
     margin: 3px 0 3px 0;
 }
 
 /*grid 6*/
 
-#strong{
+#strong {
     grid-area: strong;
     border: 10px ridge rgb(16, 16, 209);
     color: yellow;
@@ -191,40 +197,40 @@ blockquote{
     background-color: rgb(16, 16, 209, 0.5);
 }
 
-#strong ul{
+#strong ul {
     text-align: left;
 }
 
-#strong h2{
+#strong h2 {
     margin-bottom: 0;
 }
 
-.race{
-    font-weight:bold;
+.race {
+    font-weight: bold;
     margin-bottom: 8px;
 }
 
 /*grid 7*/
 
-#weak{
-    grid-area:weak;
+#weak {
+    grid-area: weak;
     border: 10px ridge red;
     text-align: center;
     background-color: rgb(214, 20, 20, 0.5);
 }
 
-#weak ul{
+#weak ul {
     text-align: left;
     margin-bottom: 8px;
 }
 
-#weak h2{
+#weak h2 {
     margin-bottom: 0;
 }
 
 /*grid 8*/
 
-#lore{
+#lore {
     grid-area: lore;
     font-weight: 300;
     font-size: 1.25rem;
@@ -233,7 +239,7 @@ blockquote{
     border: 1px solid rgb(16, 16, 209);
 }
 
-.spacer{
+.spacer {
     flex-grow: 1;
 }
 
@@ -241,6 +247,7 @@ header img {
     height: 100px;
     width: auto;
 }
+
 header h1 {
     padding-left: 20px;
     padding-top: 10px;
@@ -259,7 +266,9 @@ main li:before {
     padding-right: 8px;
 }
 
-main, section, footer {
+main,
+section,
+footer {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
@@ -271,14 +280,15 @@ main, section, footer {
         background-color: black;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        color:white;
-        
-        grid-template-areas: 
-        "nav nav"
-        "image main-text"
-        "video upgrades"
-        "strong weak"
-        "lore lore";
+        color: white;
+
+        grid-template-areas:
+            "nav nav"
+            "image main-text"
+            "video quotes"
+            "upgrades upgrades"
+            "strong weak"
+            "lore lore";
     }
 }
 
@@ -287,18 +297,19 @@ main, section, footer {
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
         display: grid;
-        grid-template-columns: 1fr ;
-        color:white;
-        
-        grid-template-areas: 
-        "nav"
-        "image "
-        "main-text"
-        "video" 
-        "upgrades"
-        "strong" 
-        "weak"
-        "lore" 
-        "lore";
+        grid-template-columns: 1fr;
+        color: white;
+
+        grid-template-areas:
+            "nav"
+            "image "
+            "main-text"
+            "video"
+            "quotes"
+            "upgrades"
+            "strong"
+            "weak"
+            "lore"
+            "lore";
     }
 }
